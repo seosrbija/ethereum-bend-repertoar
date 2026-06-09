@@ -1,0 +1,572 @@
+BLOK: zeleni
+ARTIST: Wild Cherry
+SONG: Play That Funky Music
+TON: E
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 109
+YT: https://youtu.be/JTvlujbJ5vg?si=X4Iz4xCXawErbHfP
+---
+BLOK: zeleni
+ARTIST: Portishead
+SONG: Glory Box
+TON: d
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: violina
+BPM: 118
+YT: https://youtu.be/4qQyUi4zfDs?si=PSeYbtfpXp2cDYHB
+---
+BLOK: zeleni
+ARTIST: Yes
+SONG: Owner of a Lonely Heart
+TON: a
+SAX: true
+SAX_NOTE: treba glumiti trubače tamo gde ih ima
+SYNTH: true
+SYNTH_NOTE: Synth Brass 2:24 ključno da sredimo
+BPM: 126
+YT: https://youtu.be/vpIduDaggVA?si=FBKeWUjXPTIUKx-M
+---
+BLOK: zeleni
+ARTIST: GALA (Cover)
+SONG: Freed From Desire
+TON: d
+SAX: true
+SAX_NOTE: "Na-na-na-na-na" deo obavezno ostalo u pozadini
+SYNTH: true
+SYNTH_NOTE: Eurodance Lead ili Trance Pluck
+BPM: 128
+YT: https://youtu.be/a8wrOF0xuU4?si=lH67JU_y7JgDvhgJ
+---
+BLOK: zeleni
+ARTIST: The Black Keys
+SONG: Lonely Boy
+TON: E
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Hammond u pozadini isto gitarska stvar
+BPM: 166
+YT: https://youtu.be/a_426RiwST8?si=Hz_Bm1KloQdOzBOX
+---
+BLOK: zeleni
+ARTIST: Sevdahbaby
+SONG: Ti mi se tako sviđaš
+TON: D
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 128
+YT: https://youtu.be/gMDZobzWekY?si=NnDEiLjgUFjap7ew
+---
+BLOK: zeleni
+ARTIST: Stevie Wonder
+SONG: Higher Ground
+TON: e
+SAX: true
+SAX_NOTE: samo ako ćemo https://youtu.be/Skm7Bjxcnlo?list=RDSkm7Bjxcnlo ovu verziju raditi
+SYNTH: true
+SYNTH_NOTE: "Clavinet D6" model iz Piano sekcije
+BPM: 122
+YT: https://youtu.be/zGSxvH5i6XQ?si=ALBjf9_MUyhEaoZ6
+---
+BLOK: zeleni
+ARTIST: Nipple People
+SONG: Sutra
+TON: F
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 125
+YT: https://youtu.be/0LrP6WiaeEI?si=7kSkuz1RG40C73Yd
+---
+BLOK: zeleni
+ARTIST: Oktobar 1864
+SONG: Crni ples
+TON: e
+SAX: true
+SAX_NOTE: na 1:31 skinuti obavezno svirati sa sax
+SYNTH: true
+SYNTH_NOTE: Za rifove: Sample Synth -> "Synth Brass" (80s Brass / Power Horns). strofa:Sample Synth -> "String Pad" ili "Analog Synth Pad"
+BPM: 125
+YT: https://www.youtube.com/watch?v=kv6CKNKemuU
+---
+BLOK: zeleni
+ARTIST: Jamiroquai
+SONG: Bad Girls
+TON: cis#
+SAX: true
+SAX_NOTE: ne melodiju nego poslušati trubače
+SYNTH: true
+SYNTH_NOTE: Clavinet (D6) + strings
+BPM: 121
+YT: https://youtu.be/rMcEwaGz_64?si=MYN5UD_EgmzJa-IE
+---
+BLOK: zeleni
+ARTIST: Morcheeba
+SONG: Blood Like Lemonade
+TON: d
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 168
+YT: https://youtu.be/W7WDUB3ZojE?si=8EVEXI_1_XbgUF2Q
+---
+BLOK: zeleni
+ARTIST: Talking Heads
+SONG: Psycho killer
+TON: A
+SAX: false
+SAX_NOTE: 
+SYNTH: false
+SYNTH_NOTE: Hammond u pozadini isto gitarska stvar
+BPM: 121
+YT: https://youtu.be/REuoiWUZqXU?si=3rGb6inTm221Iflp
+---
+BLOK: purple
+ARTIST: Sade
+SONG: Smooth Operator
+TON: d
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 119
+YT: https://youtu.be/4TYv2PhG89A?si=aqZSkvtuYU_hJinJ
+---
+BLOK: purple
+ARTIST: Peter Gabriel
+SONG: Sledge Hammer
+TON: E
+SAX: true
+SAX_NOTE: pratiti temu dok se ne peva i duvače uz pevanje
+SYNTH: true
+SYNTH_NOTE: Shakuhachi (ili pan flute) za početak, posle Synth Brass
+BPM: 96
+YT: https://youtu.be/OJWJE0x7T4Q?si=JvbZSQk9-m5onkBf
+---
+BLOK: purple
+ARTIST: Morcheeba
+SONG: The Sea
+TON: e
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 70
+YT: https://youtu.be/zWHXPz6qF7g?si=q05qHysHj2mn6qNq
+---
+BLOK: purple
+ARTIST: Mando Diao
+SONG: Dance with Somebody
+TON: f#
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: synth karakteristican zvuk
+BPM: 140
+YT: https://youtu.be/q44e2GFDVkQ?si=Yqeyts9EofPoMDzd
+---
+BLOK: purple
+ARTIST: Nipplepeople
+SONG: Frka
+TON: d
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Sample Synth -> "Analog Pad" ili "String Pad". Obavezno: Chorus (Effect 1) na max! * solo Sample Synth -> "Saw Lead" ili "Analog Lead". Obavezno: Delay (Effect 2) + malo Drive-a.
+BPM: 120
+YT: https://youtu.be/2pfLE5YJ1Fo?si=4d0sfmba_6WEHNcj
+---
+BLOK: purple
+ARTIST: Queen
+SONG: I Want To Break Free
+TON: E
+SAX: true
+SAX_NOTE: u pozadini ali tiho, dugačke, stabilne note koje prate harmoni
+SYNTH: true
+SYNTH_NOTE: Sample Synth sekcija -> "Synth Brass" ili "Analog Poly Synth" popunjavanje pratnja
+BPM: 110
+YT: youtube.com/watch?v=kBFGQ_Khc3Q&feature=youtu.be
+---
+BLOK: purple
+ARTIST: Sevdahbaby
+SONG: Ljubi me brzo
+TON: E
+SAX: true
+SAX_NOTE: na 1:!9 ima jedan ukras koji nam fali, takve upade treba da praviš stalno ostalo ništa ili jako tiho
+SYNTH: true
+SYNTH_NOTE: Synth Brass (iz Sample sekcije) + Drive.
+BPM: 125
+YT: https://youtu.be/h3DH0C4lVjA?si=meHbGgg1FD2KtcRw
+---
+BLOK: purple
+ARTIST: DLM
+SONG: DIsko Klub
+TON: c
+SAX: true
+SAX_NOTE: staccato tiho uz strofu, temu pratiš sa gitarom
+SYNTH: true
+SYNTH_NOTE: Sample Synth -> "Brass Section" (traži u Nord Library * Podešavanje: Ključ je Compressor (Effect 2) / Organ sekcija (B3)
+BPM: 128
+YT: https://youtu.be/9CQJhRv6Fqg?si=-1ze25gpkdMI_ihm
+---
+BLOK: purple
+ARTIST: Fleetwood Mac
+SONG: The Chain
+TON: e
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Hammond B3 (Organ)
+BPM: 168
+YT: https://youtu.be/kBYHwH1Vb-c?si=MExl3W7MGXvFq6cV
+---
+BLOK: purple
+ARTIST: Bryan Adams
+SONG: Run To You
+TON: f#
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: na 2:20 skinuti donju tercu illi šta je već na synth
+BPM: 127
+YT: https://youtu.be/nCBASt507WA?si=8oQy07L9oipC3icx
+---
+BLOK: purple
+ARTIST: Selah Sue
+SONG: This World
+TON: d
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 136
+YT: 
+---
+BLOK: purple
+ARTIST: Kenny Loggins
+SONG: Footloose
+TON: A
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 174
+YT: https://youtu.be/ltrMfT4Qz5Y?si=InPpkQ6zD94VWYKG
+---
+BLOK: narandžasti
+ARTIST: Lola Young
+SONG: Messy
+TON: E
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 111
+YT: https://youtu.be/k-k2_Liofy8?si=twYgKqhNvAaBc1jC
+---
+BLOK: narandžasti
+ARTIST: Teddy Swims
+SONG: Crazy
+TON: a
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Wurli ili Rhodes
+BPM: 87
+YT: https://youtu.be/BaH0u7_Py00?si=URNFC6Rru64f5f6N
+---
+BLOK: narandžasti
+ARTIST: Stevie Wonder
+SONG: Superstition
+TON: E
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 101
+YT: https://youtu.be/O1QV0b-Yy5M?si=pxBeFMmEXvpA4j84
+---
+BLOK: narandžasti
+ARTIST: Billy Ocean
+SONG: Caribbean Queen
+TON: d
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 114
+YT: https://youtu.be/uxX2gA18grk?si=HYuRiV9o6pBQnCFC
+---
+BLOK: narandžasti
+ARTIST: Oktobar 1864
+SONG: E 7/9 / Tri boje zvuka
+TON: e
+SAX: true
+SAX_NOTE: trubacki delovi ostalo ništa
+SYNTH: true
+SYNTH_NOTE: rifovi: Sample Synth -> "Brass Section" ili "Power Horns * akorde: Organ (B3) -> "Percussive" registracija (drawbars: 888 800 000 )
+BPM: 110
+YT: https://youtu.be/lEm6x5FAofc?si=Fpl-UopbkFz5tA47
+---
+BLOK: narandžasti
+ARTIST: Rick James
+SONG: Super Freak
+TON: A
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 132
+YT: 
+---
+BLOK: narandžasti
+ARTIST: Alice Merton
+SONG: No roots
+TON: h
+SAX: true
+SAX_NOTE: na 3.00 minutu jako ostalo ništa
+SYNTH: true
+SYNTH_NOTE: sitno u pozadini, na 3.00 minutu jako
+BPM: 118
+YT: https://youtu.be/PUdyuKaGQd4?si=LWtQNS_bkeR5hheu
+---
+BLOK: narandžasti
+ARTIST: Hozier
+SONG: Too Sweet
+TON: A
+SAX: true
+SAX_NOTE: samo na refrenu ostalo ništa
+SYNTH: true
+SYNTH_NOTE: hammond + zvona?
+BPM: 116
+YT: https://youtu.be/NTpbbQUBbuo?si=3aIFmstHD0QflIRX
+---
+BLOK: narandžasti
+ARTIST: Anastacia
+SONG: Not That Kind
+TON: fis
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Sample Synth sekcija -> "Section Brass" ili "Power Horns".
+BPM: 103
+YT: https://youtu.be/DjUKxQYm0AI?si=9Q3lOgQSbh4-uWHS
+---
+BLOK: narandžasti
+ARTIST: Tears For Fears
+SONG: Everybody Wants To Rule The World
+TON: D
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Sample Synth sekcija -> "Synth Bell" ili "Digital Piano/E-Piano" sa puno "shimmer" efekta.
+BPM: 112
+YT: https://youtu.be/znDgBy2mHbc?si=ikK99oihCZMa0SSL
+---
+BLOK: narandžasti
+ARTIST: George Michael
+SONG: Faith
+TON: H
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 96
+YT: https://youtu.be/6Cs3Pvmmv0E?si=C8MfHDgEzSEFDgx2
+---
+BLOK: narandžasti
+ARTIST: Portugal. The Man
+SONG: Feel It Still
+TON: cis
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 79
+YT: https://youtu.be/UQHSK-kgONk?si=e3ap5sScSHdOpuky
+---
+BLOK: crveni
+ARTIST: The Doobie Brothers
+SONG: Long Train Runnin'
+TON: g
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 117
+YT: https://youtu.be/CVsLEI-hCXw?si=Gd8j5jtru3xnvDn9
+---
+BLOK: crveni
+ARTIST: Stevie Wonder
+SONG: Part-Time Lover
+TON: A
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 175
+YT: https://youtu.be/DNG_1dERwVI?si=5V9BUjMF--3iHCjW
+---
+BLOK: crveni
+ARTIST: Jon Allen
+SONG: Keep On Walking
+TON: h
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 86
+YT: https://youtu.be/hnbAmAhrg7I?si=-c4yXhNi-q6YtjSj
+---
+BLOK: crveni
+ARTIST: Céline Dion, Anastacia
+SONG: You Shook Me All Night Long
+TON: G
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: samo tepih
+BPM: 121
+YT: https://youtu.be/1niTEkP-6eo?si=RAIG8xBFOqIZ6PXp
+---
+BLOK: crveni
+ARTIST: E-PLAY
+SONG: Divan dan
+TON: fis
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: nešto razmazano samo za pozadinu ovde je gitara primary.. eventualno te da skineš iza gluposti koje svira solo gitara jer sam ja busy sa riffovima
+BPM: 177
+YT: https://youtu.be/kpznKoohEo0?si=aK64zPe3xb-Sz-u_
+---
+BLOK: crveni
+ARTIST: Republica
+SONG: Ready To Go
+TON: d
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: Sample Synth sekcija -> "Saw Lead"
+BPM: 125
+YT: https://youtu.be/5aLfCslnRr4?si=jLtBHbuHzYSgD4w2
+---
+BLOK: crveni
+ARTIST: Black Pumas
+SONG: Colors
+TON: fis
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 90
+YT: https://youtu.be/0G383538qzQ?si=6b-RJQuTGWnUdTe9
+---
+BLOK: crveni
+ARTIST: Titiyo
+SONG: Come Along
+TON: f
+SAX: false
+SAX_NOTE: 
+SYNTH: true
+SYNTH_NOTE: "Bright E-Piano" (kao DX7 ili čisti Rhodes) sa puno Compression-a.
+BPM: 125
+YT: https://youtu.be/yLsVGwNWOA4?si=OdBbxLWr7WFX4Pjf
+---
+BLOK: crveni
+ARTIST: Detour
+SONG: Plešem sama
+TON: fis
+SAX: true
+SAX_NOTE: na 2:22 tvojih "5 minuta"
+SYNTH: true
+SYNTH_NOTE: Sample Synth -> "Synth Pad" + "Saw Pluck".
+BPM: 120
+YT: https://youtu.be/gdvUKG18NbU?si=9247_vgGW-TeMnWC
+---
+BLOK: crveni
+ARTIST: Bill Withers
+SONG: Just the Two of Us
+TON: f
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 95
+YT: https://youtu.be/Uw5OLnN7UvM?si=bmHaqTzJcdVP7I2z
+---
+BLOK: crveni
+ARTIST: Lenny Kravitz
+SONG: The Chamber
+TON: h
+SAX: true
+SAX_NOTE: BASS DOMINACIJA mi ostali smo u pozadini
+SYNTH: true
+SYNTH_NOTE: Strings pozadina
+BPM: 118
+YT: https://youtu.be/RqgEqG2jaQY?si=2JTKiMEdEPvvo3e0
+---
+BLOK: crveni
+ARTIST: The Black Crowes
+SONG: Hard To Handle
+TON: H
+SAX: false
+SAX_NOTE: full gitara nista osim neke sitne harmonije
+SYNTH: false
+SYNTH_NOTE: full gitara nista osim neke sitne harmonije
+BPM: 104
+YT: https://youtu.be/BRcs_OzQb14?si=LVnwjUNvG2aZ9FfM
+---
+BLOK: plavi
+ARTIST: John Travolta & Olivia Newton-John
+SONG: You're the One That I Want
+TON: a
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 107
+YT: 
+---
+BLOK: plavi
+ARTIST: REM
+SONG: The One I Love
+TON: a
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 128
+YT: 
+---
+BLOK: plavi
+ARTIST: Aerosmith
+SONG: Dream on
+TON: f
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 
+YT: https://youtu.be/qF9dCWmq3pM?si=OfyV2x4sdYtLhPyu
+---
+BLOK: plavi
+ARTIST: 
+SONG: Sunny
+TON: 
+SAX: 
+SAX_NOTE: 
+SYNTH: 
+SYNTH_NOTE: 
+BPM: 
+YT: https://youtu.be/mVhy7JPqM7A?si=aQhXjxyB4XAaXOf7
+---
