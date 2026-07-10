@@ -30,6 +30,36 @@ SYNTH: true
 SYNTH_NOTE: Synth Brass 2:24 ključno da sredimo
 BPM: 126
 YT: https://youtu.be/vpIduDaggVA?si=FBKeWUjXPTIUKx-M
+NOTES:
+HARMONIJE:
+Strofa i Refren: A dorski
+Refren Lead-Out: A miksolidijski
+Refren Lead-Out 2: F miksolidijski
+
+STRUKTURA:
+[Strofa 1]
+Am X 8
+[Refren]
+Am X 4
+[Strofa 2]
+Am X 8
+[Refren]
+Am X 4
+[Refren Lead-Out]
+A miksolidijski X 5
+[Break]
+Bubnjevi
+[Solo]
+[Bridge - Lagani deo]
+[Refren]
+Am X 4
+[Refren Lead-Out]
+A miksolidijski X 5
+[Refren Lead-Out 2]
+F miksolidijski X 5
+(peti put usporavanje i kraj)
+
+NAPOMENE 🎸: između Solo i Bridge gitara pravi prirodan prelaz
 ---
 BLOK: zeleni
 ARTIST: GALA (Cover)
@@ -262,7 +292,7 @@ SYNTH_NOTE:
 BPM: 174
 YT: https://youtu.be/ltrMfT4Qz5Y?si=InPpkQ6zD94VWYKG
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Lola Young
 SONG: Messy
 TON: E
@@ -273,7 +303,7 @@ SYNTH_NOTE:
 BPM: 111
 YT: https://youtu.be/k-k2_Liofy8?si=twYgKqhNvAaBc1jC
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Teddy Swims
 SONG: Crazy
 TON: a
@@ -284,7 +314,7 @@ SYNTH_NOTE: Wurli ili Rhodes
 BPM: 87
 YT: https://youtu.be/BaH0u7_Py00?si=URNFC6Rru64f5f6N
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Stevie Wonder
 SONG: Superstition
 TON: E
@@ -295,7 +325,7 @@ SYNTH_NOTE:
 BPM: 101
 YT: https://youtu.be/O1QV0b-Yy5M?si=pxBeFMmEXvpA4j84
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Billy Ocean
 SONG: Caribbean Queen
 TON: d
@@ -306,7 +336,7 @@ SYNTH_NOTE:
 BPM: 114
 YT: https://youtu.be/uxX2gA18grk?si=HYuRiV9o6pBQnCFC
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Oktobar 1864
 SONG: E 7/9 / Tri boje zvuka
 TON: e
@@ -317,7 +347,7 @@ SYNTH_NOTE: rifovi: Sample Synth -> "Brass Section" ili "Power Horns * akorde: O
 BPM: 110
 YT: https://youtu.be/lEm6x5FAofc?si=Fpl-UopbkFz5tA47
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Rick James
 SONG: Super Freak
 TON: A
@@ -328,7 +358,7 @@ SYNTH_NOTE:
 BPM: 132
 YT: 
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Alice Merton
 SONG: No roots
 TON: h
@@ -339,7 +369,7 @@ SYNTH_NOTE: sitno u pozadini, na 3.00 minutu jako
 BPM: 118
 YT: https://youtu.be/PUdyuKaGQd4?si=LWtQNS_bkeR5hheu
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Hozier
 SONG: Too Sweet
 TON: A
@@ -350,7 +380,7 @@ SYNTH_NOTE: hammond + zvona?
 BPM: 116
 YT: https://youtu.be/NTpbbQUBbuo?si=3aIFmstHD0QflIRX
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Anastacia
 SONG: Not That Kind
 TON: fis
@@ -361,7 +391,7 @@ SYNTH_NOTE: Sample Synth sekcija -> "Section Brass" ili "Power Horns".
 BPM: 103
 YT: https://youtu.be/DjUKxQYm0AI?si=9Q3lOgQSbh4-uWHS
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Tears For Fears
 SONG: Everybody Wants To Rule The World
 TON: D
@@ -372,7 +402,7 @@ SYNTH_NOTE: Sample Synth sekcija -> "Synth Bell" ili "Digital Piano/E-Piano" sa 
 BPM: 112
 YT: https://youtu.be/znDgBy2mHbc?si=ikK99oihCZMa0SSL
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: George Michael
 SONG: Faith
 TON: H
@@ -383,7 +413,7 @@ SYNTH_NOTE:
 BPM: 96
 YT: https://youtu.be/6Cs3Pvmmv0E?si=C8MfHDgEzSEFDgx2
 ---
-BLOK: narandžasti
+BLOK: narandzasti
 ARTIST: Portugal. The Man
 SONG: Feel It Still
 TON: cis
@@ -569,4 +599,3 @@ SYNTH:
 SYNTH_NOTE: 
 BPM: 
 YT: https://youtu.be/mVhy7JPqM7A?si=aQhXjxyB4XAaXOf7
----
