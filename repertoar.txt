@@ -422,7 +422,7 @@ Označen je samo kraj kruga, jer se samo to razlikuje u strofama i prvoj Interlu
 
 STRUKTURA:
 [Uvod]
-1× FD
+1× FD Bass
 [Strofa 1]
 1× FD
 **1× Ba**
@@ -430,7 +430,7 @@ STRUKTURA:
 1× FD
 [Refren]
 2× FD
-Interlude (vocals):
+[Interlude (vocals)]
 **1× Ba**
 [Strofa 2]
 1× FD
@@ -439,11 +439,11 @@ Interlude (vocals):
 1× FD
 [Refren]
 2× FD
-Interlude (vocals):
+[Interlude (vocals)]
 2× FD
-Outro:
+[Outro]
 1× FD
-Kraj:
+[Kraj]
 Fgg
 ---
 BLOK: narandzasti
