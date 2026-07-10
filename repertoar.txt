@@ -35,13 +35,13 @@ STRUKTURA:
 [Refren]
 4×DCBH
 [Solo]
-4×DCBH
+4×DCBH Gitara
 [Strofa 3]
 4×DCBH
 [Refren]
 5×DCBH
-Break:
-Dm – Dm/C – Bm7b5, zatim N.C. - ne sviramo
+[Break]
+Dm – Dm/C – Bm7b5, zatim N.C. - **ne sviramo**
 [Strofa 4]
 3×DCBH
 [Refren]
