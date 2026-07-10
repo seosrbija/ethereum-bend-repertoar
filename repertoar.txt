@@ -19,6 +19,33 @@ SYNTH: true
 SYNTH_NOTE: violina
 BPM: 118
 YT: https://youtu.be/4qQyUi4zfDs?si=PSeYbtfpXp2cDYHB
+NOTES:
+HARMONIJA:
+Dm-Dm/C-Hm7b5-Bmaj7
+
+STRUKTURA:
+[Uvod]
+4×DCBH
+[Strofa 1]
+3×DCBH
+[Refren]
+4×DCBH
+[Strofa 2]
+3×DCBH
+[Refren]
+4×DCBH
+[Solo]
+4×DCBH
+[Strofa 3]
+4×DCBH
+[Refren]
+5×DCBH
+Break:
+Dm – Dm/C – Bm7b5, zatim N.C. - ne sviramo
+[Strofa 4]
+3×DCBH
+[Refren]
+3×, završava na Dm
 ---
 BLOK: zeleni
 ARTIST: Yes
@@ -31,7 +58,7 @@ SYNTH_NOTE: Synth Brass 2:24 ključno da sredimo
 BPM: 126
 YT: https://youtu.be/vpIduDaggVA?si=FBKeWUjXPTIUKx-M
 NOTES:
-HARMONIJE:
+HARMONIJA:
 Strofa i Refren: A dorski
 PostRefren: A miksolidijski
 PostRefren 2: F miksolidijski
@@ -40,6 +67,8 @@ NAPOMENE:
 🎸 između Solo i Bridge gitara pravi prirodan prelaz
 
 STRUKTURA:
+[Uvod]
+Am X 3
 [Strofa 1]
 Am X 8
 [Refren]
@@ -383,6 +412,39 @@ SYNTH: true
 SYNTH_NOTE: hammond + zvona?
 BPM: 116
 YT: https://youtu.be/NTpbbQUBbuo?si=3aIFmstHD0QflIRX
+NOTES:
+HARMONIJA:
+GaBcdD#FD
+GaBcdD#Ba
+
+NAPOMENA:
+Označen je samo kraj kruga, jer se samo to razlikuje u strofama i prvoj Interlude
+
+STRUKTURA:
+[Uvod]
+1× FD
+[Strofa 1]
+1× FD
+1× Ba
+[PredRefren]
+1× FD
+[Refren]
+2× FD
+Interlude (vocals):
+1× Ba
+[Strofa 2]
+1× FD
+1× Ba
+[PredRefren]
+1× FD
+[Refren]
+2× FD
+Interlude (vocals):
+2× FD
+Outro:
+1× FD
+Kraj:
+Fgg
 ---
 BLOK: narandzasti
 ARTIST: Anastacia
