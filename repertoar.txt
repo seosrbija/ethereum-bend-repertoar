@@ -33,8 +33,11 @@ YT: https://youtu.be/vpIduDaggVA?si=FBKeWUjXPTIUKx-M
 NOTES:
 HARMONIJE:
 Strofa i Refren: A dorski
-Refren Lead-Out: A miksolidijski
-Refren Lead-Out 2: F miksolidijski
+PostRefren: A miksolidijski
+PostRefren 2: F miksolidijski
+
+NAPOMENE:
+🎸 između Solo i Bridge gitara pravi prirodan prelaz
 
 STRUKTURA:
 [Strofa 1]
@@ -45,21 +48,22 @@ Am X 4
 Am X 8
 [Refren]
 Am X 4
-[Refren Lead-Out]
+[PostRefren]
 A miksolidijski X 5
 [Break]
-Bubnjevi
+Bubnjevi + Synth
 [Solo]
-[Bridge - Lagani deo]
+Gitara
+[Bridge - lagani deo]
+Gitara
 [Refren]
 Am X 4
-[Refren Lead-Out]
+[PostRefren]
 A miksolidijski X 5
-[Refren Lead-Out 2]
+[PostRefren 2]
 F miksolidijski X 5
-(peti put usporavanje i kraj)
-
-NAPOMENE 🎸: između Solo i Bridge gitara pravi prirodan prelaz
+[Kraj]
+(peti put kraj)
 ---
 BLOK: zeleni
 ARTIST: GALA (Cover)
