@@ -154,6 +154,16 @@ function parseNoteChunks(notes: string): NoteChunk[] {
   return chunks;
 }
 
+// **tekst** unutar NOTES se prikazuje plavo i boldovano
+function InlineText({ text }: { text: string }) {
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return <>{parts.map((p, i) =>
+    p.startsWith("**") && p.endsWith("**") && p.length > 4
+      ? <strong key={i} style={{color:"#60a5fa", fontWeight:800}}>{p.slice(2, -2)}</strong>
+      : <React.Fragment key={i}>{p}</React.Fragment>
+  )}</>;
+}
+
 function NotesView({ notes, accent }: { notes: string; accent: string }) {
   if (!notes || !notes.trim()) return <p className="empty">Za ovu pesmu nema napomena.</p>;
   const chunks = parseNoteChunks(notes);
@@ -161,15 +171,15 @@ function NotesView({ notes, accent }: { notes: string; accent: string }) {
     {chunks.map((c, i) => {
       if (c.kind === "heading") return <div key={i} style={{fontWeight:700, fontSize:16, marginTop: i === 0 ? 0 : 22, marginBottom:8, letterSpacing:0.5, borderBottom:`1px solid ${accent}44`, paddingBottom:4}}>{c.text}</div>;
       if (c.kind === "gap") return <div key={i} style={{height:10}} />;
-      if (c.kind === "callout") return <div key={i} style={{fontWeight:700, whiteSpace:"pre-wrap", background:`${accent}16`, borderLeft:`3px solid ${accent}`, borderRadius:8, padding:"10px 14px", margin:"4px 0"}}>{c.lines.join("\n")}</div>;
-      if (c.kind === "text") return <div key={i} style={{whiteSpace:"pre-wrap", opacity:0.92}}>{c.text}</div>;
+      if (c.kind === "callout") return <div key={i} style={{fontWeight:700, whiteSpace:"pre-wrap", background:`${accent}16`, borderLeft:`3px solid ${accent}`, borderRadius:8, padding:"10px 14px", margin:"4px 0"}}><InlineText text={c.lines.join("\n")} /></div>;
+      if (c.kind === "text") return <div key={i} style={{whiteSpace:"pre-wrap", opacity:0.92}}><InlineText text={c.text} /></div>;
       // Tabela strukture: leva kolona sekcija (u svojoj boji), desna kolona napomene
       return <div key={i} style={{display:"grid", gridTemplateColumns:"minmax(120px, 42%) 1fr", border:"1px solid #2a2a3a", borderRadius:10, overflow:"hidden", margin:"4px 0 12px"}}>
         {c.rows.map((row, j) => {
           const color = sectionColor(row.section);
           return <React.Fragment key={j}>
             <div style={{padding:"10px 12px", fontWeight:700, color, background:`${color}18`, borderLeft:`3px solid ${color}`, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}>{row.section}</div>
-            <div style={{padding:"10px 12px", whiteSpace:"pre-wrap", opacity:0.92, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}>{row.content.join("\n") || "—"}</div>
+            <div style={{padding:"10px 12px", whiteSpace:"pre-wrap", opacity:0.92, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}><span><InlineText text={row.content.join("\n") || "—"} /></span></div>
           </React.Fragment>;
         })}
       </div>;
