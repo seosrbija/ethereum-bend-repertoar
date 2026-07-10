@@ -88,22 +88,89 @@ function SongPage({ song, onBack }: { song: Song; onBack: () => void }) {
   </main>;
 }
 
+// Fiksne boje po tipu sekcije
+function sectionColor(name: string): string {
+  const n = name.toLowerCase();
+  if (n.includes("prerefren") || n.includes("pre-refren") || n.includes("pre refren") || n.includes("pre-chorus")) return "#f97316"; // narandžasta
+  if (n.includes("postrefren") || n.includes("post-refren") || n.includes("post refren") || n.includes("post-chorus") || n.includes("lead-out") || n.includes("lead out")) return "#ec4899"; // roze
+  if (n.includes("refren") || n.includes("chorus")) return "#ef4444"; // crvena
+  if (n.includes("strofa") || n.includes("verse")) return "#22c55e"; // zelena
+  if (n.includes("bridge")) return "#2e8bc0"; // egejsko plava
+  if (n.includes("solo")) return "#a855f7"; // ljubičasta
+  if (n.includes("break")) return "#eab308"; // žuta
+  if (n.includes("intro") || n.includes("outro") || n.includes("uvod") || n.includes("kraj")) return "#7dd3fc"; // svetlo plava
+  return "#cbd5e1"; // ostalo — svetlo siva
+}
+
+type NoteChunk =
+  | { kind: "heading"; text: string }
+  | { kind: "text"; text: string }
+  | { kind: "callout"; lines: string[] }
+  | { kind: "gap" }
+  | { kind: "table"; rows: { section: string; content: string[] }[] };
+
+function parseNoteChunks(notes: string): NoteChunk[] {
+  const lines = notes.replace(/\r\n/g, "\n").split("\n");
+  const chunks: NoteChunk[] = [];
+  let table: { section: string; content: string[] }[] | null = null;
+  let inNapomene = false; // tekst posle naslova NAPOMENE: ide u istaknuti blok
+
+  const closeTable = () => { if (table && table.length) chunks.push({ kind: "table", rows: table }); table = null; };
+
+  for (const line of lines) {
+    const t = line.trim();
+    const isSection = /^\[.*\]$/.test(t);
+    const isHeading = /^[A-ZŠĐČĆŽ0-9 \-]+:\s*$/.test(t) && t.length > 2;
+
+    if (isSection) {
+      inNapomene = false;
+      const name = t.slice(1, -1).trim();
+      if (!table) table = [];
+      table.push({ section: name, content: [] });
+    } else if (table) {
+      if (t === "" || isHeading) {
+        closeTable();
+        if (isHeading) { chunks.push({ kind: "heading", text: t }); inNapomene = t.toUpperCase().includes("NAPOMEN"); }
+        else chunks.push({ kind: "gap" });
+      } else {
+        table[table.length - 1].content.push(line);
+      }
+    } else if (isHeading) {
+      chunks.push({ kind: "heading", text: t });
+      inNapomene = t.toUpperCase().includes("NAPOMEN");
+    } else if (t === "") {
+      chunks.push({ kind: "gap" });
+    } else if (inNapomene) {
+      const last = chunks[chunks.length - 1];
+      if (last && last.kind === "callout") last.lines.push(line);
+      else chunks.push({ kind: "callout", lines: [line] });
+    } else {
+      chunks.push({ kind: "text", text: line });
+    }
+  }
+  closeTable();
+  return chunks;
+}
+
 function NotesView({ notes, accent }: { notes: string; accent: string }) {
   if (!notes || !notes.trim()) return <p className="empty">Za ovu pesmu nema napomena.</p>;
-  const lines = notes.replace(/\r\n/g, "\n").split("\n");
-  return <div style={{textAlign:"left", maxWidth:560, margin:"0 auto", lineHeight:1.65, fontSize:15}}>
-    {lines.map((line, i) => {
-      const t = line.trim();
-      if (/^\[.*\]$/.test(t)) {
-        // [Verse], [Chorus]... — sekcije strukture
-        return <div key={i} style={{color:accent, fontWeight:700, marginTop: i === 0 ? 0 : 10}}>{t}</div>;
-      }
-      if (/^[A-ZŠĐČĆŽ0-9 \-]+:\s*$/.test(t) && t.length > 2) {
-        // HARMONIJE:, STRUKTURA:, NAPOMENE:... — naslovi celina
-        return <div key={i} style={{fontWeight:700, fontSize:16, marginTop: i === 0 ? 0 : 22, marginBottom:4, letterSpacing:0.5, borderBottom:`1px solid ${accent}44`, paddingBottom:4}}>{t}</div>;
-      }
-      if (t === "") return <div key={i} style={{height:10}} />;
-      return <div key={i} style={{whiteSpace:"pre-wrap", opacity:0.92}}>{line}</div>;
+  const chunks = parseNoteChunks(notes);
+  return <div style={{textAlign:"left", maxWidth:560, margin:"0 auto", lineHeight:1.6, fontSize:15}}>
+    {chunks.map((c, i) => {
+      if (c.kind === "heading") return <div key={i} style={{fontWeight:700, fontSize:16, marginTop: i === 0 ? 0 : 22, marginBottom:8, letterSpacing:0.5, borderBottom:`1px solid ${accent}44`, paddingBottom:4}}>{c.text}</div>;
+      if (c.kind === "gap") return <div key={i} style={{height:10}} />;
+      if (c.kind === "callout") return <div key={i} style={{fontWeight:700, whiteSpace:"pre-wrap", background:`${accent}16`, borderLeft:`3px solid ${accent}`, borderRadius:8, padding:"10px 14px", margin:"4px 0"}}>{c.lines.join("\n")}</div>;
+      if (c.kind === "text") return <div key={i} style={{whiteSpace:"pre-wrap", opacity:0.92}}>{c.text}</div>;
+      // Tabela strukture: leva kolona sekcija (u svojoj boji), desna kolona napomene
+      return <div key={i} style={{display:"grid", gridTemplateColumns:"minmax(120px, 42%) 1fr", border:"1px solid #2a2a3a", borderRadius:10, overflow:"hidden", margin:"4px 0 12px"}}>
+        {c.rows.map((row, j) => {
+          const color = sectionColor(row.section);
+          return <React.Fragment key={j}>
+            <div style={{padding:"10px 12px", fontWeight:700, color, background:`${color}18`, borderLeft:`3px solid ${color}`, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}>{row.section}</div>
+            <div style={{padding:"10px 12px", whiteSpace:"pre-wrap", opacity:0.92, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}>{row.content.join("\n") || "—"}</div>
+          </React.Fragment>;
+        })}
+      </div>;
     })}
   </div>;
 }
