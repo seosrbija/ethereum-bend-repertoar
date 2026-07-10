@@ -154,14 +154,58 @@ function parseNoteChunks(notes: string): NoteChunk[] {
   return chunks;
 }
 
-// **tekst** unutar NOTES se prikazuje plavo i boldovano
-function InlineText({ text }: { text: string }) {
+// Custom ikonica: jazz bass glava sa 4 čivije (ne postoji kao emoji)
+function BassIcon() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" style={{display:"inline-block", verticalAlign:"-3px", marginRight:1}} aria-label="bass">
+    <rect x="9" y="1.5" width="7.5" height="15" rx="2.5" fill="#d97706" />
+    <rect x="10.5" y="15.5" width="4.5" height="7" rx="1" fill="#92400e" />
+    {[4, 7.7, 11.4, 15.1].map(cy => <g key={cy}>
+      <rect x="6.5" y={cy - 0.6} width="3" height="1.2" fill="#94a3b8" />
+      <circle cx="5.5" cy={cy} r="1.9" fill="#e2e8f0" stroke="#94a3b8" strokeWidth="0.6" />
+    </g>)}
+  </svg>;
+}
+
+// Prepoznavanje instrumenata po korenu reči → ikonica ispred reči
+const INSTRUMENT_RE = /\b(gitar|bubnj|bubanj|synth|sint|klavijatur|klavir|hammond|orgulj|saks|sax|trub|vokal|bass)[a-zA-Z0-9šđčćžŠĐČĆŽ]*/gi;
+
+function instrumentIcon(word: string): React.ReactNode | null {
+  const w = word.toLowerCase();
+  if (w.startsWith("gitar")) return "🎸";
+  if (w.startsWith("bubnj") || w.startsWith("bubanj")) return "🥁";
+  if (w.startsWith("synth") || w.startsWith("sint") || w.startsWith("klavijatur") || w.startsWith("klavir") || w.startsWith("hammond") || w.startsWith("orgulj")) return "🎹";
+  if (w.startsWith("saks") || w.startsWith("sax")) return "🎷";
+  if (w.startsWith("trub")) return "🎺";
+  if (w.startsWith("vokal")) return "🎤";
+  if (w.startsWith("bass")) return <BassIcon />;
+  return null;
+}
+
+function withIcons(text: string): React.ReactNode[] {
+  const nodes: React.ReactNode[] = [];
+  let last = 0, m: RegExpExecArray | null, k = 0;
+  INSTRUMENT_RE.lastIndex = 0;
+  while ((m = INSTRUMENT_RE.exec(text)) !== null) {
+    if (m.index > last) nodes.push(text.slice(last, m.index));
+    const icon = instrumentIcon(m[0]);
+    nodes.push(<React.Fragment key={k++}>{icon}{icon ? " " : ""}{m[0]}</React.Fragment>);
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) nodes.push(text.slice(last));
+  return nodes;
+}
+
+// **tekst** unutar NOTES se prikazuje plavo i boldovano; icons=true dodaje ikonice instrumenata
+function InlineText({ text, icons = false }: { text: string; icons?: boolean }) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
-  return <>{parts.map((p, i) =>
-    p.startsWith("**") && p.endsWith("**") && p.length > 4
-      ? <strong key={i} style={{color:"#60a5fa", fontWeight:800}}>{p.slice(2, -2)}</strong>
-      : <React.Fragment key={i}>{p}</React.Fragment>
-  )}</>;
+  return <>{parts.map((p, i) => {
+    const isBold = p.startsWith("**") && p.endsWith("**") && p.length > 4;
+    const inner = isBold ? p.slice(2, -2) : p;
+    const content = icons ? withIcons(inner) : inner;
+    return isBold
+      ? <strong key={i} style={{color:"#60a5fa", fontWeight:800}}>{content}</strong>
+      : <React.Fragment key={i}>{content}</React.Fragment>;
+  })}</>;
 }
 
 function NotesView({ notes, accent }: { notes: string; accent: string }) {
@@ -179,7 +223,7 @@ function NotesView({ notes, accent }: { notes: string; accent: string }) {
           const color = sectionColor(row.section);
           return <React.Fragment key={j}>
             <div style={{padding:"10px 12px", fontWeight:700, color, background:`${color}18`, borderLeft:`3px solid ${color}`, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}>{row.section}</div>
-            <div style={{padding:"10px 12px", whiteSpace:"pre-wrap", opacity:0.92, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}><span><InlineText text={row.content.join("\n") || "—"} /></span></div>
+            <div style={{padding:"10px 12px", whiteSpace:"pre-wrap", opacity:0.92, borderBottom: j < c.rows.length - 1 ? "1px solid #2a2a3a" : "none", display:"flex", alignItems:"center"}}><span><InlineText text={row.content.join("\n") || "—"} icons /></span></div>
           </React.Fragment>;
         })}
       </div>;
