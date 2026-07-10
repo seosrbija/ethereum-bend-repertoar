@@ -91,7 +91,7 @@ function SongPage({ song, onBack }: { song: Song; onBack: () => void }) {
 // Fiksne boje po tipu sekcije
 function sectionColor(name: string): string {
   const n = name.toLowerCase();
-  if (n.includes("prerefren") || n.includes("pre-refren") || n.includes("pre refren") || n.includes("pre-chorus")) return "#f97316"; // narandžasta
+  if (n.includes("prerefren") || n.includes("predrefren") || n.includes("pre-refren") || n.includes("pre refren") || n.includes("pre-chorus")) return "#f97316"; // narandžasta
   if (n.includes("postrefren") || n.includes("post-refren") || n.includes("post refren") || n.includes("post-chorus") || n.includes("lead-out") || n.includes("lead out")) return "#ec4899"; // roze
   if (n.includes("refren") || n.includes("chorus")) return "#ef4444"; // crvena
   if (n.includes("strofa") || n.includes("verse")) return "#22c55e"; // zelena
@@ -119,12 +119,14 @@ function parseNoteChunks(notes: string): NoteChunk[] {
 
   for (const line of lines) {
     const t = line.trim();
-    const isSection = /^\[.*\]$/.test(t);
-    const isHeading = /^[A-ZŠĐČĆŽ0-9 \-]+:\s*$/.test(t) && t.length > 2;
+    const isHeading = /^[A-ZŠĐČĆŽ0-9 \-]+:\s*$/.test(t) && t.length > 2; // SVE VELIKIM: naslovi celina (HARMONIJA:, STRUKTURA:...)
+    const isBracketSection = /^\[.*\]$/.test(t);
+    const isColonSection = !isHeading && !isBracketSection && /^[^\[\]]+:$/.test(t) && t.length > 1; // "Break:", "Outro:"...
+    const isSection = isBracketSection || isColonSection;
 
     if (isSection) {
       inNapomene = false;
-      const name = t.slice(1, -1).trim();
+      const name = isBracketSection ? t.slice(1, -1).trim() : t.slice(0, -1).trim();
       if (!table) table = [];
       table.push({ section: name, content: [] });
     } else if (table) {
