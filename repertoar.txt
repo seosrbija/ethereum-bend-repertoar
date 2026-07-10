@@ -425,16 +425,16 @@ STRUKTURA:
 1× FD
 [Strofa 1]
 1× FD
-1× Ba
+**1× Ba**
 [PredRefren]
 1× FD
 [Refren]
 2× FD
 Interlude (vocals):
-1× Ba
+**1× Ba**
 [Strofa 2]
 1× FD
-1× Ba
+**1× Ba**
 [PredRefren]
 1× FD
 [Refren]
