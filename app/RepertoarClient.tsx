@@ -188,7 +188,8 @@ function withIcons(text: string): React.ReactNode[] {
   while ((m = INSTRUMENT_RE.exec(text)) !== null) {
     if (m.index > last) nodes.push(text.slice(last, m.index));
     const icon = instrumentIcon(m[0]);
-    nodes.push(<React.Fragment key={k++}>{icon}{icon ? " " : ""}{m[0]}</React.Fragment>);
+    // ikonica ZAMENJUJE reč; ako iz nekog razloga nema ikonice, ostaje reč
+    nodes.push(<React.Fragment key={k++}>{icon ?? m[0]}</React.Fragment>);
     last = m.index + m[0].length;
   }
   if (last < text.length) nodes.push(text.slice(last));
