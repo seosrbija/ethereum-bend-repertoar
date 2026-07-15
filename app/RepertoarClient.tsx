@@ -167,7 +167,7 @@ function BassIcon() {
 }
 
 // Prepoznavanje instrumenata po korenu reči → ikonica ispred reči
-const INSTRUMENT_RE = /\b(gitar|bubnj|bubanj|synth|sint|klavijatur|klavir|hammond|orgulj|saks|sax|trub|vokal|bass)[a-zA-Z0-9šđčćžŠĐČĆŽ]*/gi;
+const INSTRUMENT_RE = /\b(gitar|bubnj|bubanj|synth|sint|klavijatur|klavir|hammond|orgulj|saks|sax|trub|duvač|duvac|vokal|bass)[a-zA-Z0-9šđčćžŠĐČĆŽ]*/gi;
 
 function instrumentIcon(word: string): React.ReactNode | null {
   const w = word.toLowerCase();
@@ -175,7 +175,7 @@ function instrumentIcon(word: string): React.ReactNode | null {
   if (w.startsWith("bubnj") || w.startsWith("bubanj")) return "🥁";
   if (w.startsWith("synth") || w.startsWith("sint") || w.startsWith("klavijatur") || w.startsWith("klavir") || w.startsWith("hammond") || w.startsWith("orgulj")) return "🎹";
   if (w.startsWith("saks") || w.startsWith("sax")) return "🎷";
-  if (w.startsWith("trub")) return "🎺";
+  if (w.startsWith("trub") || w.startsWith("duvač") || w.startsWith("duvac")) return "🎺";
   if (w.startsWith("vokal")) return "🎤";
   if (w.startsWith("bass")) return <BassIcon />;
   return null;
