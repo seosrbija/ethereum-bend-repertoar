@@ -121,11 +121,11 @@ E G A (Riff na E)
 
 STRUKTURA:
 [Uvod]
-2× 4×E gitara
+4×E gitara
 [Solo]
-2× E E A A
+2× EE AA
 [Uvod]
-2× 4×E gitara + bass
+4×E gitara + bass
 [Strofa 1]
 4× E G A
 [PredRefren]
@@ -133,7 +133,7 @@ STRUKTURA:
 [Refren]
 2× E G A
 [Uvod]
-2× 4×E gitara
+4×E gitara
 [Strofa 2]
 4× E G A
 [PredRefren]
@@ -141,7 +141,7 @@ STRUKTURA:
 [Refren]
 2× E G A
 [Uvod]
-2× 4×E gitara + bass
+4×E gitara + bass
 [Strofa 3]
 4× E G A
 [PredRefren]
@@ -149,7 +149,7 @@ STRUKTURA:
 [Refren]
 2× E G A
 [Uvod]
-2× 4×E gitara
+4×E gitara
 [Solo]
 2× E E A A
 [PredRefren]
@@ -257,6 +257,40 @@ SYNTH: true
 SYNTH_NOTE: Shakuhachi (ili pan flute) za početak, posle Synth Brass
 BPM: 96
 YT: https://youtu.be/OJWJE0x7T4Q?si=JvbZSQk9-m5onkBf
+NOTES:
+HARMONIJA:
+E miksolidijski; Strofa: E (C#m E), Refren: C#m D F#m
+
+STRUKTURA:
+[Uvod]
+E E E E klavijature flauta
+[Instrumental]
+EE-CEH-A
+[Break]
+[Strofa 1]
+6×E-C#m-E
+[Break]
+[Strofa 2]
+4×E
+[Refren]
+4× C#m D F#m
+[Instrumental]
+2×E
+[Break]
+[Strofa 3]
+4×E
+[Refren X 2]
+8× C#m D F#m
+[PostRefren]
+2×E
+[Solo]
+2 X EECA - klavijature flauta
+[Bridge]
+4xEECA - I kick the door down + DUVAČI
+[Outro]
+4xEECA - Show for me
+[Kraj]
+4xEECA groove, improvizacija
 ---
 BLOK: purple
 ARTIST: Morcheeba
