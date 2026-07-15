@@ -115,6 +115,49 @@ SYNTH: true
 SYNTH_NOTE: Hammond u pozadini isto gitarska stvar
 BPM: 166
 YT: https://youtu.be/a_426RiwST8?si=Hz_Bm1KloQdOzBOX
+NOTES:
+HARMONIJA:
+E G A (Riff na E)
+
+STRUKTURA:
+[Uvod]
+2× 4×E gitara
+[Solo]
+2× E E A A
+[Uvod]
+2× 4×E gitara + bass
+[Strofa 1]
+4× E G A
+[PredRefren]
+2× E G A
+[Refren]
+2× E G A
+[Uvod]
+2× 4×E gitara
+[Strofa 2]
+4× E G A
+[PredRefren]
+2× E G A
+[Refren]
+2× E G A
+[Uvod]
+2× 4×E gitara + bass
+[Strofa 3]
+4× E G A
+[PredRefren]
+2× E G A
+[Refren]
+2× E G A
+[Uvod]
+2× 4×E gitara
+[Solo]
+2× E E A A
+[PredRefren]
+2× E G A
+[Refren]
+2× E G A
+[Kraj]
+Završava na E
 ---
 BLOK: zeleni
 ARTIST: Sevdahbaby
