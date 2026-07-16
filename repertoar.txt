@@ -346,6 +346,44 @@ SYNTH: true
 SYNTH_NOTE: Synth Brass (iz Sample sekcije) + Drive.
 BPM: 125
 YT: https://youtu.be/h3DH0C4lVjA?si=meHbGgg1FD2KtcRw
+NOTES:
+NAPOMENA:
+Uvod ide 2 kruga bez basa, pa 4 kruga sa basom
+
+STRUKTURA:
+[Intro]
+2xE - bez basa
+[Intro]
+4xE - sa basom
+[Break]
+2XEG
+[Refren]
+4xEDCA - bez vokala
+[Refren]
+4xEDCA - sa vokalom
+[Strofa]
+Samo bubanj
+[Bridge]
+4xCD-DE
+[Break]
+D
+[Refren]
+4xEDCA
+[Solo 1]
+3xEDC7
+3xG
+[Bridge]
+4xCD-DE - bez bubnja
+[Bridge]
+4xCD-DE
+[Break]
+D
+[Refren]
+4xEDCA
+[Solo 2]
+4xEDCA gitara wah
+[Refren]
+4xEDCA - klavijature i udaraljke, smirivanje
 ---
 BLOK: purple
 ARTIST: DLM
